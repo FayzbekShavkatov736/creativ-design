@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #0d1b2a;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar-dark .nav-link {
+      color: #ccc !important;
+    }
+    .navbar-dark .nav-link.active,
+    .navbar-dark .nav-link:hover {
+      color: #f4a261 !important;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #0d1b2a, #1b263b);
+      padding: 60px 20px;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero-text p {
+      color: #ccc;
+    }
+    .explore-btn {
+      border: 1px solid #f4a261;
+      color: #f4a261;
+      background: transparent;
+      padding: 10px 25px;
+      border-radius: 30px;
+      margin-top: 20px;
+      transition: all 0.3s;
+    }
+    .explore-btn:hover {
+      background: #f4a261;
+      color: #000;
+    }
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+    .stat-box {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: rgba(0,0,0,0.6);
+      padding: 15px 25px;
+      border-radius: 12px;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+      .stat-box {
+        position: static;
+        margin-top: 20px;
+      }
+    }
+    img{
+        height: 80vh;
+    }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">STRATEGY</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-warning ms-3" href="#">Get Started</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 mb-5 mb-lg-0 hero-text">
+        <h6>OUR AGENCY</h6>
+        <h1>CREATIVE DESIGN</h1>
+        <p>
+          Discover innovative strategies for impactful visual communication. We transform ideas into compelling realities, ensuring your brand stands out in a crowded marketplace.
+        </p>
+        <a href="#" class="explore-btn">EXPLORE SERVICES →</a>
+      </div>
+
+
+      <div class="col-lg-6 position-relative">
+        <img src="https://bootstrapmade.com/content/demo/Strategy/assets/img/abstract/abstract-1.webp" alt="Creative Art">
+        <div class="stat-box">
+          <h4>5K+</h4>
+          <p class="mb-0">Successful Campaigns</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
